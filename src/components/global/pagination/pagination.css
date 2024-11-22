@@ -1,0 +1,17 @@
+/* styles/Pagination.css */
+.pagination {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination button {
+    padding: 4px 14px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .pagination button.active {
+    background-color: #d8e8ff;
+  }
+  

@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.auto-container {
+  max-width: 1140px;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height:4px; 
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0a4853;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.feature-section {
+  position: relative;
+  background-color: white;
+}
+
+
+.feature-section::before {
+  content: "";
+  position: absolute;
+  border-top: solid 50px #0000;
+  border-bottom: solid 240px #0000;
+  border-right: solid 100px #28899b;
+  border-left: solid 10px #0000;
+  right: 0;
+  top: 0;
+  filter: drop-shadow(1px 1px 10px #d5d5d5);
+}
+
+
+
+.feature-section:after {
+  content: "";
+  position: absolute;
+  border-top: solid 50px #0000;
+  border-bottom: solid 240px #0000;
+  border-left: solid 100px #28899b;
+  border-right: solid 10px #0000;
+  left: 0;
+  top: 0;
+  filter: drop-shadow(1px 1px 10px #d5d5d5);
+}
+
+
+
+/* UPSELLING PRODUCT GAPS */
+.upsellingproduct .slick-slide {
+  padding: 0 10px; /* Use padding instead of margin */
+}
+
+.upsellingproduct .slick-list {
+  margin: 0 -10px; /* Keep this for compensating the padding */
+}
+
+
+/* COURSE PAGE SLIDER SLICK DOTS DESIGN */
+
+
+.slider-wrapper {
+  overflow: hidden; /* Hide overflow */
+  width: 100%; /* Full width for the slider */
+}
+
+.slick-dots {
+  bottom: 10px; /* Position dots properly */
+}
+
+.slick-slide {
+  display: flex; /* Ensure slides are flexed */
+  justify-content: center; /* Center images in the slides */
+  align-items: center; /* Center vertically */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(100%);
+  }
+}
+
+.slideIn {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.slideOut {
+  animation: slideOut 0.3s ease forwards;
+}
+
+@media (max-width: 575.98px) { 
+
+  .upsellingproduct .slick-slide {
+    padding: 0;
+    margin: 0;
+  }  
+
+  .course_image_slider .slick-dots{
+    right: -35% !important;
+  }
+ }
+
+

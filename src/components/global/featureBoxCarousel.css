@@ -1,0 +1,15 @@
+
+.feature_box_embla {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .feature_box_embla__container {
+    display: flex;
+  }
+  
+  .feature_box_embla__slide {
+    flex: 0 0 100%;
+  }
+  
+
