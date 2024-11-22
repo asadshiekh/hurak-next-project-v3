@@ -7,7 +7,7 @@ import { GoLock, GoMention } from 'react-icons/go';
 import ButtonFill from '@/components/global/butttons/ButtonFill';
 import ButtonOutline from '@/components/global/butttons/ButtonOutline';
 import { FcGoogle } from 'react-icons/fc';
-function page() {
+function Page() {
   const [TestingID, setTestingID] = useState(null);
   return (
     <>
@@ -52,4 +52,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

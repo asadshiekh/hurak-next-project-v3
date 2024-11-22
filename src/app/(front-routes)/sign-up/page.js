@@ -11,7 +11,7 @@ import TextInput from '@/components/global/forms/TextInput';
 import ButtonOutline from '@/components/global/butttons/ButtonOutline';
 import ButtonFill from '@/components/global/butttons/ButtonFill';
 import Checkbox from '@/components/global/forms/Checkbox';
-function page() {
+function Page() {
   const [TestingID, setTestingID] = useState(null);
 
 
@@ -75,4 +75,4 @@ function page() {
 }
 
 
-export default page
+export default Page
