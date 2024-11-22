@@ -1,0 +1,22 @@
+.course_finder_embla {
+    overflow-x: hidden;
+  }
+  .course_finder_embla__container {
+    display: flex;
+  }
+  .course_finder_embla__slide {
+    flex: 0 0 20%;
+  }
+
+  @media (max-width: 768px) {
+    .course_finder_embla__slide {
+      flex: 0 0 40%; 
+    }
+  }
+
+  @media (max-width: 576px) {
+    .course_finder_embla__slide {
+      flex: 0 0 80%;
+    }
+  }
+  
