@@ -1,7 +1,7 @@
 
 "use client";
 import Link from 'next/link';
-import TeachingJourney from './TeachingJourney';
+// import TeachingJourney from './TeachingJourney';
 import AdvertiseFeaturesSection from './AdvertisefeaturesSection';
 import WorkflowSection from './WorkflowSection';
 import OpportunitiesSection from './OpportunitiesSection';
@@ -36,7 +36,8 @@ const AdvertiseOnHurak = () => {
       </section>
 
       {/* left right section */}
-      <TeachingJourney />
+      {/* <TeachingJourney /> */}
+
 
       {/*Features section */}
       <AdvertiseFeaturesSection />
